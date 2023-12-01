@@ -1,0 +1,13 @@
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\bin\Debug\netstandard2.1\FullApp2.Services.deps.json
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\bin\Debug\netstandard2.1\FullApp2.Services.dll
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\bin\Debug\netstandard2.1\FullApp2.Services.pdb
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\bin\Debug\netstandard2.1\FullApp2.Services.Interfaces.dll
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\bin\Debug\netstandard2.1\FullApp2.Services.Interfaces.pdb
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\obj\Debug\netstandard2.1\FullApp2.Services.csproj.AssemblyReference.cache
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\obj\Debug\netstandard2.1\FullApp2.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\obj\Debug\netstandard2.1\FullApp2.Services.AssemblyInfoInputs.cache
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\obj\Debug\netstandard2.1\FullApp2.Services.AssemblyInfo.cs
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\obj\Debug\netstandard2.1\FullApp2.Services.csproj.CoreCompileInputs.cache
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\obj\Debug\netstandard2.1\FullApp2.Services.csproj.CopyComplete
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\obj\Debug\netstandard2.1\FullApp2.Services.dll
+C:\Users\007\source\repos\FullApp2\FullApp2\Services\FullApp2.Services\obj\Debug\netstandard2.1\FullApp2.Services.pdb

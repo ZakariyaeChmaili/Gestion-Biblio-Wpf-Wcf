@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ZakDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="155" FixedLength="false" Unicode="false" />
+    <Property Name="Author" Type="String" MaxLength="155" FixedLength="false" Unicode="false" />
+    <Property Name="Copies" Type="Int32" />
+    <NavigationProperty Name="Reservations" Relationship="Self.FK__Reservati__BookI__52593CB8" FromRole="Books" ToRole="Reservations" />
+  </EntityType>
+  <EntityType Name="TestTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="155" FixedLength="false" Unicode="false" />
+    <Property Name="FirstName" Type="String" MaxLength="155" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="155" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="155" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Reservations" Relationship="Self.FK__Reservati__UserI__534D60F1" FromRole="Users" ToRole="Reservations" />
+  </EntityType>
+  <EntityType Name="Reservation">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="BookId" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Precision="0" />
+    <Property Name="EndDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Book" Relationship="Self.FK__Reservati__BookI__52593CB8" FromRole="Reservations" ToRole="Books" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Reservati__UserI__534D60F1" FromRole="Reservations" ToRole="Users" />
+  </EntityType>
+  <Association Name="FK__Reservati__BookI__52593CB8">
+    <End Role="Books" Type="Self.Book" Multiplicity="1" />
+    <End Role="Reservations" Type="Self.Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reservations">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reservati__UserI__534D60F1">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Reservations" Type="Self.Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reservations">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ZakDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Books" EntityType="Self.Book" />
+    <EntitySet Name="TestTables" EntityType="Self.TestTable" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="Reservations" EntityType="Self.Reservation" />
+    <AssociationSet Name="FK__Reservati__BookI__52593CB8" Association="Self.FK__Reservati__BookI__52593CB8">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="Reservations" EntitySet="Reservations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reservati__UserI__534D60F1" Association="Self.FK__Reservati__UserI__534D60F1">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Reservations" EntitySet="Reservations" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

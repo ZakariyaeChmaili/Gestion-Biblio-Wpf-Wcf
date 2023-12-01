@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Views\ViewAuth.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ViewBookForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ViewBooks.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ViewHome.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ViewReservationDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ViewReservationForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ViewReservations.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ViewUserForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ViewUsers.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\ViewA.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewAuth.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewBookForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewBooks.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewHome.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewReservationDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewReservationForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewReservations.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewUserForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewUsers.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\007\source\repos\FullApp2\WCFServiceGestionBooks\bin\WCFServiceGestionBooks.dll.config
+C:\Users\007\source\repos\FullApp2\WCFServiceGestionBooks\bin\WCFServiceGestionBooks.dll
+C:\Users\007\source\repos\FullApp2\WCFServiceGestionBooks\bin\WCFServiceGestionBooks.pdb
+C:\Users\007\source\repos\FullApp2\WCFServiceGestionBooks\bin\EntityFramework.dll
+C:\Users\007\source\repos\FullApp2\WCFServiceGestionBooks\bin\EntityFramework.SqlServer.dll
+C:\Users\007\source\repos\FullApp2\WCFServiceGestionBooks\bin\EntityFramework.xml
+C:\Users\007\source\repos\FullApp2\WCFServiceGestionBooks\bin\EntityFramework.SqlServer.xml
+C:\Users\007\source\repos\FullApp2\WCFServiceGestionBooks\obj\Debug\WCFServiceGestionBooks.csproj.AssemblyReference.cache
+C:\Users\007\source\repos\FullApp2\WCFServiceGestionBooks\obj\Debug\WCFServiceGestionBooks.csproj.CoreCompileInputs.cache
+C:\Users\007\source\repos\FullApp2\WCFServiceGestionBooks\obj\Debug\WCFServiceGestionBooks.csproj.CopyComplete
+C:\Users\007\source\repos\FullApp2\WCFServiceGestionBooks\obj\Debug\WCFServiceGestionBooks.dll
+C:\Users\007\source\repos\FullApp2\WCFServiceGestionBooks\obj\Debug\WCFServiceGestionBooks.pdb

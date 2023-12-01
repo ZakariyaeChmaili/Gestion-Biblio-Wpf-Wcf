@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="FullApp2.Modules.ModuleName.Views.ViewBookForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock
+      Style="{StaticResource MaterialDesignHeadline5TextBlock}"
+            
+            HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Text="Book Information" FontSize="30"/>
+
+        <materialDesign:Card MaxHeight="400" HorizontalAlignment="Center" Grid.Row="1" Margin="20" Padding="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Title -->
+                <StackPanel Grid.Row="0" Margin="0 20"  Orientation="Horizontal">
+                    <Label Content="Title:"/>
+                    <TextBox Margin="20 0" TextWrapping="Wrap" Text="{Binding Book.Title}" MinWidth="130"/>
+                </StackPanel>
+
+                <!-- Author -->
+                <StackPanel Grid.Row="1" Margin="0 20" Orientation="Horizontal">
+                    <Label Content="Author:"/>
+                    <TextBox Margin="20 0" TextWrapping="Wrap" Text="{Binding Book.Author}" MinWidth="130"/>
+                </StackPanel>
+
+                <!-- Copies -->
+                <StackPanel Grid.Row="2" Margin="0 20" Orientation="Horizontal">
+                    <Label Content="Copies:"/>
+                    <TextBox Margin="20 0" TextWrapping="Wrap" Text="{Binding Book.Copies}" MinWidth="130"/>
+                </StackPanel>
+
+                <!-- Buttons -->
+                <StackPanel Grid.Row="3" Margin="0 20" Orientation="Horizontal">
+                    <Button Margin="10 0" Padding="5" Content="Save" Command="{Binding SaveCommand}" CommandParameter="{Binding SaveType}"/>
+                    <Button Margin="10 0" Padding="5" Content="Cancel" Command="{Binding CancelCommand}"/>
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>
+
